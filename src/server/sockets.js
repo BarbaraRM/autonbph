@@ -88,7 +88,7 @@ module.exports = io => {
 
         socket.on('new-answer-e3', (data)=>{
             console.log("q"+data)
-            io.to(socket.id).emit('server-mes sage-e3',data)
+            io.to(socket.id).emit('server-message-e3',data)
             //io.emit('server-message-e3',data)
         })
         //EJERCICIO 4 ********************************
