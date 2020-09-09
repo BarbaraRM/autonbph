@@ -1,0 +1,298 @@
+{
+  "settings": {
+    "languages": [
+      "en"
+    ],
+    "nlu": {
+      "useNoneFeature": false
+    },
+    "tag": "nlp",
+    "threshold": 0.5,
+    "autoLoad": true,
+    "autoSave": true,
+    "modelFileName": "model.nlp",
+    "calculateSentiment": true
+  },
+  "nluManager": {
+    "settings": {
+      "tag": "nlu-manager",
+      "useNoneFeature": false
+    },
+    "locales": [
+      "en"
+    ],
+    "languageNames": {},
+    "domainManagers": {
+      "en": {
+        "settings": {
+          "locale": "en",
+          "useNoneFeature": false,
+          "tag": "domain-manager-en",
+          "nluByDomain": {
+            "default": {
+              "className": "NeuralNlu",
+              "settings": {}
+            }
+          },
+          "trainByDomain": false,
+          "useStemDict": true
+        },
+        "stemDict": {
+          "como,llama,te": {
+            "intent": "name",
+            "domain": "default"
+          },
+          "codigo,cuanta,de,linea,tien": {
+            "intent": "lines",
+            "domain": "default"
+          }
+        },
+        "intentDict": {
+          "name": "default",
+          "lines": "default"
+        },
+        "sentences": [
+          {
+            "domain": "default",
+            "utterance": "¿como te llamas?",
+            "intent": "name"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cómo te llamas?",
+            "intent": "name"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuántas líneas de código tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuantas lineas de codigo tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuántas lineas de codigo tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuántas líneas de codigo tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuantas líneas de código tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuántas líneas de codigo tienes?",
+            "intent": "lines"
+          },
+          {
+            "domain": "default",
+            "utterance": "¿cuantas lineas de código tienes?",
+            "intent": "lines"
+          }
+        ],
+        "domains": {
+          "master_domain": {
+            "settings": {
+              "locale": "en",
+              "tag": "nlu-en",
+              "keepStopwords": true,
+              "nonefeatureValue": 1,
+              "nonedeltaMultiplier": 1.2,
+              "spellCheck": false,
+              "spellCheckDistance": 1,
+              "filterZeros": true,
+              "log": true
+            },
+            "features": {
+              "como": 1,
+              "te": 1,
+              "llama": 1,
+              "cuanta": 1,
+              "linea": 1,
+              "de": 1,
+              "codigo": 1,
+              "tien": 1
+            },
+            "intents": {
+              "name": 1,
+              "lines": 1
+            },
+            "intentFeatures": {
+              "name": {
+                "como": 1,
+                "te": 1,
+                "llama": 1
+              },
+              "lines": {
+                "cuanta": 1,
+                "linea": 1,
+                "de": 1,
+                "codigo": 1,
+                "tien": 1
+              }
+            },
+            "featuresToIntent": {
+              "como": [
+                "name"
+              ],
+              "te": [
+                "name"
+              ],
+              "llama": [
+                "name"
+              ],
+              "cuanta": [
+                "lines"
+              ],
+              "linea": [
+                "lines"
+              ],
+              "de": [
+                "lines"
+              ],
+              "codigo": [
+                "lines"
+              ],
+              "tien": [
+                "lines"
+              ]
+            },
+            "neuralNetwork": {
+              "settings": {
+                "useNoneFeature": false,
+                "locale": "en",
+                "tag": "nlu-en",
+                "keepStopwords": true,
+                "nonefeatureValue": 1,
+                "nonedeltaMultiplier": 1.2,
+                "spellCheck": false,
+                "spellCheckDistance": 1,
+                "filterZeros": true,
+                "log": true
+              },
+              "features": [
+                "como",
+                "te",
+                "llama",
+                "cuanta",
+                "linea",
+                "de",
+                "codigo",
+                "tien"
+              ],
+              "intents": [
+                "name",
+                "lines"
+              ],
+              "perceptrons": [
+                [
+                  4.196156024932861,
+                  4.196156024932861,
+                  4.196156024932861,
+                  -0.38482487201690674,
+                  -0.38482487201690674,
+                  -0.38482487201690674,
+                  -0.38482487201690674,
+                  -0.38482487201690674,
+                  1.9091272002961188
+                ],
+                [
+                  -0.37920641899108887,
+                  -0.37920641899108887,
+                  -0.37920641899108887,
+                  2.6323862075805664,
+                  2.6323862075805664,
+                  2.6323862075805664,
+                  2.6323862075805664,
+                  2.6323862075805664,
+                  1.1237659786910412
+                ]
+              ]
+            }
+          }
+        }
+      }
+    },
+    "intentDomains": {},
+    "extraSentences": [
+      [
+        "en",
+        "¿como te llamas?"
+      ],
+      [
+        "en",
+        "¿cómo te llamas?"
+      ],
+      [
+        "en",
+        "¿cuántas líneas de código tienes?"
+      ],
+      [
+        "en",
+        "¿cuantas lineas de codigo tienes?"
+      ],
+      [
+        "en",
+        "¿cuántas lineas de codigo tienes?"
+      ],
+      [
+        "en",
+        "¿cuántas líneas de codigo tienes?"
+      ],
+      [
+        "en",
+        "¿cuantas líneas de código tienes?"
+      ],
+      [
+        "en",
+        "¿cuántas líneas de codigo tienes?"
+      ],
+      [
+        "en",
+        "¿cuantas lineas de código tienes?"
+      ]
+    ]
+  },
+  "ner": {
+    "settings": {
+      "tag": "ner",
+      "entityPreffix": "%",
+      "entitySuffix": "%"
+    },
+    "rules": {}
+  },
+  "nlgManager": {
+    "settings": {
+      "tag": "nlg-manager"
+    },
+    "responses": {
+      "en": {
+        "lines": [
+          {
+            "answer": "Mi código tiene 78 líneas (u.u)"
+          }
+        ],
+        "name": [
+          {
+            "answer": "Mi nombre es Ejercicio 2. (>.<)"
+          }
+        ]
+      }
+    }
+  },
+  "actionManager": {
+    "settings": {
+      "tag": "action-manager"
+    },
+    "actions": {}
+  },
+  "slotManager": {}
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Autonomo 1 - Ejercicio 2</title>
+</head>
+<body>
+    <div id="wrapper">
+        <header>
+            <h1> Trabajo Autonomo </h1>
+            <p><b>Integrantes: Pardo Henry - Ramirez Paulo - Romero Bárbara</b></p>
+            <p><b>Seleccione un ejercicio de la lista:</b></p>
+            <div >
+                <select class="select-css" id="cb_ejercicios">
+                    <option value="0">Selecciona una opción</option>
+                    <option value="1">Ejercicio 1</option>
+                    <option value="2">Ejercicio 2</option>
+                    <option value="3">Ejercicio 3</option>
+                    <option value="4">Ejercicio 4</option>   
+                    <option value="5">Ejercicio 5</option>
+                </select>
+            </div>
+            <br>
+        </header>
+        <div id="content">
+            <div id="ejercicio1" hidden=true>
+                <div class="cont_princ">
+                    <div class="users-window">
+                        <div id="sec-tittle">
+                            <p><b>Usuarios activos</b></p>
+                        </div>
+                        <div id="user-lists-e1">
+                        </div>
+                    </div>
+                
+                    <div class="chat-contenedor-e1">       
+                        <div id="sec-tittle">
+                            <p><b>VER ARCHIVO</b></p>
+                        </div>
+                        <div id="chat-window">
+                            <div id="contenido-archivo">
+                            </div>
+                        </div>
+                        <div id="sec-envio">
+                            <label for="file-input">Examinar y enviar archivo de texto plano al servidor</label>
+                            <input type="text" class = "name-e" id="name-e1" placeholder="Nombre" disabled="true">
+                            <input class = "enviar-archivo" type="file" id="file-input"/>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+
+            <div id=ejercicio2 hidden=true>
+                <div id="chat-contenedor">       
+                    <div id="sec-tittle">
+                        <p><b>MINI CHAT-BOT</b></p>
+                    </div>
+                    <div id="chat-window">
+                        <div id="conversacion"></div>
+                    </div>
+                    <div id="sec-envio">
+                        <input type="text" id="mensaje" placeholder="Preguntame algo, no te olvides los signos ¿?">
+                        <button id="enviar">Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id=ejercicio3 hidden=true>
+                <div id="chat-repuestas" >       
+                    <div id="sec-tittle">
+                        <p><b>TU  RESPUESTA  AUTOMATICA</b></p>
+                    </div>
+                    <div id="chat-window-e3">
+                        <div id="conversacion-e3"></div>
+                    </div>
+                    <div id="sec-envio-e3">
+                        <input type="text" id="name-e3" placeholder="Nombre">
+                        <input type="text" id="message-e3" placeholder="Escribeme un mensaje...">
+                        <button id="enviar-e3">Enviar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div id=ejercicio4 hidden=true>     
+                <h5>Envio de token entre clientes A-B</h5>   
+                <div class="content-e4" >       
+                    <div class="sec-tittle-e4">
+                        <p id="cliente-e41"><b> CLIENTE ...</b></p>
+                        <p id="descipcion-e41"><b></b></p>
+                    </div>
+                    <div class = "show-window-e4" id ="vent-e41">
+                        <p id="cont-e4"></p>
+                    </div>
+                    <div class="sec-envio-e4">
+                        <button class="start-e4" id="start1">Conectar Cliente</button>
+                    </div>
+                </div>       
+            </div>
+
+            <div id=ejercicio5 hidden=true>
+                <h5>Conoce el numero de cliente que eres...</h5> 
+                <div class="card">
+                    <img src="./css/img_avatar.png" alt="Avatar" style="width:100%">
+                    <div class="container">
+                      <h4><b>Usted es el usuario conectado #</b></h4>
+                      <p id = "numuser-e5"></p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/lista_programas.js"></script>
+    <script src="./js/ejercicio1.js"></script>
+    <script src="./js/ejercicio2.js"></script>
+    <script src="./js/ejercicio3.js"></script>
+    <script src="./js/ejercicio4.js"></script>
+    <script src="./js/ejercicio5.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,317 @@
+header {
+    color: white;
+    text-align: center ;
+    border-radius: 20px;
+    padding-top: 10px;
+    background-color: #0086CD;
+
+}
+header p{
+    margin: 6px;
+    font-size: 18px;
+}
+header h1{
+    margin: 4px;
+}
+#content{
+    width: 100%;
+    height: 700px;;
+}
+.select-css {
+    display: block;
+    font-size: 16px;
+    font-family: 'Verdana', sans-serif;
+    font-weight: 400;
+    color: #444;
+    line-height: 1.3;
+    padding: .4em 1.4em .3em .8em;
+    width: 400px;
+    max-width: 100%; 
+    box-sizing: border-box;
+    margin: 20px auto;
+    border: 1px solid #aaa;
+    box-shadow: 0 1px 0 1px rgba(0,0,0,.03);
+    border-radius: .3em;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E'),
+      linear-gradient(to bottom, #ffffff 0%,#f7f7f7 100%);
+    background-repeat: no-repeat, repeat;
+    background-position: right .7em top 50%, 0 0;
+    background-size: .65em auto, 100%;
+}
+/****** CSS PARA EJERCICIO 1 ******/
+.cont_princ{
+    width: 900px;
+    height: fit-content;
+
+}
+#hola{
+    font-size: 10px;
+    margin: 10px;
+    width: 10%;
+    background-color: black;
+}
+.users-window{
+    min-width: 200px;
+    height: 635px;
+    margin:30px 15px;
+    border:2px solid black;
+    border-radius: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    float:left;
+}
+.chat-contenedor-e1{
+    min-width: 350px;
+    margin:30px 15px;
+    border:2px solid black;
+    width: 500px;
+    border-radius: 15px;
+    box-sizing: border-box;
+    float: left;
+    background-color: whitesmoke;
+}
+enviar-archivo{
+    color: #fff;
+    font-size:18px;
+    border:0;
+    height: 40px;
+    padding:12px 0;
+    width:100%;
+    border-radius: 15px;
+}
+#sec-envio .name-e{
+    padding:10px 20px;
+    box-sizing: border-box;
+    border:0;
+    background-color: white;
+    float:left;
+    width: 25%;
+    height: 40px;    
+    border: 2px solid #ddd;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+/****** CSS PARA EJERCICIO 2 ******/
+#chat-contenedor{
+    min-width: 350px;
+    margin:30px auto;
+    border:2px solid black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+#sec-tittle{
+    border:1px solid #ddd;
+    border-color: black;    
+    background-color: #243865;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+#sec-tittle p{
+    font-size: 20px;
+    text-align: center;
+    color:white;
+}
+#chat-window{
+    padding:10px 0;
+    margin:0 10px;
+    background-color: whitesmoke;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#usuario-m{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 20px;
+    padding-left: 25px;
+    width: 60%;
+    font-size: 16px;
+    background-color: #9EE1F2;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#respuesta-m{
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-left: 36%;
+    padding-left: 25px;
+    width: 60%;
+    font-size: 16px;
+    background-color: #EBF9C3;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+input{
+    padding:10px 20px;
+    box-sizing: border-box;
+    border:0;
+    background-color: white;
+    float:left;
+    width: 80%;
+    height: 40px;    
+    border: 2px solid #ddd;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+button{
+    background-color: #FFBD00;
+    color: #fff;
+    font-size:18px;
+    border:0;
+    height: 40px;
+    padding:12px 0;
+    width:20%;
+    border-bottom-right-radius: 15px;
+    
+}
+/****** CSS PARA EJERCICIO 3 ******/
+#chat-window-e3{
+    padding:10px 0;
+    margin:0 10px;
+    background-color: wh;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#chat-repuestas{
+    max-width: 600px;
+    margin:30px auto;
+    border:2px solid #ddd;
+    border-color: black;
+    border-radius: 15px;
+    background-color: whitesmoke;
+}
+#answers-window{
+    padding:10px 0;
+    margin:0 10px;
+    background-color: wh;
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+#sec-envio-e3 #name-e3{
+    padding:10px 20px;
+    box-sizing: border-box;
+    border:0;
+    background-color: white;
+    float:left;
+    width: 25%;
+    height: 40px;    
+    border: 2px solid #ddd;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#sec-envio-e3 #message-e3{
+    padding:10px 20px;
+    box-sizing: border-box;
+    border:0;
+    background-color: white;
+    float:left;
+    width: 55%;
+    height: 40px;    
+    border: 2px solid #ddd;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+/****** CSS PARA EJERCICIO 4 ******/
+#ejercicio4{
+    height: 400px;
+    width: 900px;
+}
+h5{
+    text-align: center;
+    font-size: 20px;
+    margin: 15px;
+}
+.boton{
+    width: 100%;
+    text-align: center ;    
+}
+.boton button{
+    margin: 5px 0 10px 0;
+    border-radius: 10px;
+    justify-items: center ;
+    width: 40%;
+    background-color: red;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0,.5);
+}
+.content-e4{
+    justify-self: center;
+    width: 400px;
+    margin-left: 3%;  
+    margin-top: 20px ;
+    border:1px solid black;
+    background-color: white;
+    border-radius: 20px;
+    margin-left: auto;
+  margin-right: auto;
+}
+.content-e4 .sec-tittle-e4{
+    border:1px solid #ddd;
+    border-color: black;    
+    text-align: center;
+    
+    color: white;
+    background-color: #243865;
+    border-top-left-radius: 19px;
+    border-top-right-radius: 19px;
+}
+.content-e4 .sec-tittle-e4 p{
+    color: white;
+}
+.show-window-e4{
+    height: 80px;
+}
+.show-window-e4 p{
+    height: 100%;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.sec-envio-e4 button{
+    width: 100%;
+    background-color: #D4F2CC;
+    color: black;
+    font-size:18px;
+    border:0;
+    height: 40px;
+    padding:12px 0;
+    font-family: 'Times New Roman', Times, serif;
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+/****** CSS PARA EJERCICIO 5 ******/
+#ejercicio5{
+    align-items: center;
+    text-align: center;
+}
+.card {
+    /* Add shadows to create the "card" effect */
+    align-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px; /* 5px rounded corners */
+    width: 30%;
+    margin-left: auto;
+  margin-right: auto;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+/* Add some padding inside the card container */
+.container {
+    padding: 2px 16px;
+}
+.container #numuser-e5{
+    font-size: 34px;
+    margin: 5px;
+    padding: 0;
+}
+.container h4{
+    margin: 8px 0px;
+    padding: 0;
+}
