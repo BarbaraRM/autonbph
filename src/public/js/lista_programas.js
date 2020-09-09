@@ -1,4 +1,3 @@
-//const sockets = require("../../server/sockets")
 const socket = io.connect();
 
 const ejercicio1_div = document.getElementById('ejercicio1')
@@ -16,8 +15,7 @@ ejercicio5_div.hidden = true
 const cb_ejercicios = document.getElementById('cb_ejercicios')
 
 cb_ejercicios.onchange = function (e) {
-    var option = cb_ejercicios.value;    
-    console.log(option)
+    var option = cb_ejercicios.value;
     if (option === '0') {
         ejercicio1_div.hidden = true
         ejercicio2_div.hidden = true
@@ -38,14 +36,12 @@ cb_ejercicios.onchange = function (e) {
         socket.emit('nuevo_usuario', {name: person, id:socket.id}, data => {
         //socket.emit('nuevo_usuario', person, data => {
             if (!data) {
-                console.log('entro aqui')
                 alert('El usuario ya existe')
             }
         });
     }
 
     if (option === '2') {
-        console.log(option)
         ejercicio1_div.hidden = true
         ejercicio2_div.hidden = false
         ejercicio3_div.hidden = true
