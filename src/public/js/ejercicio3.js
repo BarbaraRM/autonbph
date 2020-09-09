@@ -22,7 +22,6 @@ socket.on('client-message-e3',(data)=>{
     conversacion3.innerHTML+=`<p id="usuario-m"><strong>${data.usuario}</strong>:  ${data.mensaje}</p>`
 })
 
-socket.on('server-message-e3',(data)=>{    
-    console.log(data)
+socket.on('server-message-e3',(data)=>{ 
     conversacion3.innerHTML+=`<p id="respuesta-m"><strong>${data.usuario}</strong> ${data.mensaje}</p>`
 })
